@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const books = [
+            {id: 1, name:'Book 1',},
+            {id: 2, name:'Book 2',},
+            {id: 3, name:'Book 3',},
+            {id: 4, name:'Book 4',},
+        ]
+    const searchBookById = (id) => {
+    const books2 = books.find(book => book.id === id);
+    if (books2) {
+    console.log(`Id ${books2.id} name ${books2.name}`);
+  } else {
+    console.log('Không có');
+  }
+};
+
+searchBookById(3);
+searchBookById(5);
+    </script>
+</body>
+</html>
